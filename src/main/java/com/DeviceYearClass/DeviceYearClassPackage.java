@@ -1,12 +1,13 @@
 package com.upinion.DeviceYearClass;
 
-import java.util.*;
-
 import com.facebook.react.ReactPackage;
-import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class DeviceYearClassPackage implements ReactPackage {
 
@@ -15,11 +16,6 @@ public class DeviceYearClassPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new DeviceYearClass(reactContext));
         return modules;
-    }
-
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
     }
 
     @Override
